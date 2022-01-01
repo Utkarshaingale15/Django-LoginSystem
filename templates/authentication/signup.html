@@ -1,0 +1,55 @@
+{% extends 'authentication/index.html' %}
+
+    {% block content %}
+
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                <strong>Message:</strong> {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+
+
+        <div class=" container siup">
+            <h1>Sign Up</h1>
+            <br>    
+
+            <form action="/signup" method="post">
+
+                {% csrf_token %}
+                
+                <label for="">Username :-</label>
+                <input type="text" id="username" name="username" placeholder="Create a Username(only letters and numbers allowed)" required>
+                <br><br>
+
+                <label for="">First Name :-</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your Name" required>
+                <br><br>
+
+                <label for="">Last Name :-</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your Surname" required>
+                <br><br>
+
+                <label for="">E-mail Id :-</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email id" required>
+                <br><br>
+
+                <label for="">Password :-</label>
+                <input type="password" id="password" name="password" placeholder="Create a Password" required>
+                <br><br>
+
+                <label for="">Confirm Password :-</label>
+                <input type="password" id="password2" name="password2" placeholder="Confirm your Password" required>
+                <br><br>
+
+                <button type="submit" class="btn btn-info">Sign Up</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/" type="reset" class="btn btn-danger">Cancel</a>
+                <br><br>
+
+            </form>
+
+        <div> 
+
+    {% endblock content %}
