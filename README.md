@@ -64,10 +64,10 @@ Admin Table :-
 
 ![admin](https://user-images.githubusercontent.com/92079968/147846078-b1312479-8e57-4764-8e2e-ee574d4e50ea.PNG)
 
-Active User :- 
+Activated Account User :- 
 
 ![active](https://user-images.githubusercontent.com/92079968/147846086-b3b179a3-5c49-412e-87e6-ba003d641315.PNG)
 
-Inactive User :- 
+Inactivated Account User :- 
 
 ![notactive](https://user-images.githubusercontent.com/92079968/147846093-6b1ff4a4-4eb6-4e2f-b6cd-defc932f431a.PNG)
